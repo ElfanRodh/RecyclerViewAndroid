@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="recycler_keluarga.elfanrodhian.xyz.DetailPendidikanActivity">
+
+    <TextView
+        android:id="@+id/txtDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="casual"
+        android:text="Detail Pendidikan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Jenjang"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/gambar" />
+
+    <TextView
+        android:id="@+id/txtTtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="32dp"
+        android:text="Nama Instansi"
+        app:layout_constraintLeft_toLeftOf="@+id/txtNama"
+        app:layout_constraintTop_toBottomOf="@+id/txtNama" />
+
+    <TextView
+        android:id="@+id/txtJk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="32dp"
+        android:text="Alamat Instansi"
+        app:layout_constraintLeft_toLeftOf="@+id/txtTtl"
+        app:layout_constraintTop_toBottomOf="@+id/txtTtl" />
+
+    <EditText
+        android:id="@+id/etJenjang"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-1dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Jenjang"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNama"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtNama"
+        app:layout_constraintVertical_bias="0.571"
+        android:layout_marginLeft="130dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Nama Instansi"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTtl"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/etJenjang"
+        app:layout_constraintRight_toRightOf="@+id/etJenjang"
+        app:layout_constraintTop_toTopOf="@+id/txtTtl"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:editable="false"
+        android:ems="10"
+        android:text="Alamat"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtJk"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/etNama"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtJk"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/etTahun"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:editable="false"
+        android:ems="10"
+        android:text="Tahun"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintLeft_toLeftOf="@+id/etAlamat"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.469" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="32dp"
+        android:text="Tahun Lulus"
+        app:layout_constraintLeft_toLeftOf="@+id/txtJk"
+        app:layout_constraintTop_toBottomOf="@+id/txtJk" />
+
+    <ImageButton
+        android:id="@+id/gambar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetail"
+        app:srcCompat="@color/cardview_light_background" />
+</android.support.constraint.ConstraintLayout>
